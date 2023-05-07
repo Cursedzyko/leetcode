@@ -1,0 +1,17 @@
+Insertion sort is a simple sorting algorithm that works by repeatedly 
+inserting elements from an unsorted list into a sorted sublist at the correct position.
+The algorithm starts by assuming that the first element in the list is already sorted. 
+Then, it considers the second element and inserts it into the correct position in the sorted sublist.
+It continues this process for each element in the list, until the entire list is sorted.
+
+Pseudo-code:
+Start with the second element in the list (index 1).
+Compare the second element with the first element (index 0).
+If the second element is smaller than the first element, swap them.
+Move to the next element (index 2) and compare it with the previous elements (indexes 1, 0).
+Insert the element into the correct position in the sorted sublist.
+Continue this process for each element in the list.
+
+Time complexsity:
+Worst: O(n**2);
+Best: O(n);*/

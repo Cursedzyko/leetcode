@@ -38,7 +38,7 @@ public:
             }
             cur = cur->next;
         }
-        cur->next = list1 ? list1 : list2;
+        cur->next = list1 ? list1 : list2; // add remaining to res;
         return (res.next);
     }
 };

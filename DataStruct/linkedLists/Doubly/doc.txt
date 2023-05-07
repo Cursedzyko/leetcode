@@ -1,0 +1,14 @@
+            Doubly linked list is preferred when we don’t have memory 
+     limitation and searching is required(we need to perform search operation on the linked list).
+
+
+A Doubly Linked List has a previous link field along with a data field and a next link field.
+
+
+In a Doubly Linked List, the traversal(access) can be done using the next node link as well as the previous node link.
+
+Accessing elements in a Doubly Linked List is more efficient when compared 
+to a Singly Linked List as both forward and backward traversal is possible.
+
+The time complexity of inserting or deleting a node at a given position 
+(if the pointer to that position is given) in a doubly linked list is O(1).

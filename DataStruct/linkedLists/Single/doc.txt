@@ -1,0 +1,104 @@
+
+Singly linked list is preferred when we have memory limitation(we can’t use much memory) and searching is not required.
+
+
+
+Linked list consists of nodes where each node contains a data field and a reference(link) to the next node in the list.
+
+struct node{
+	int data;
+	struct node *next;
+}
+
+Access -----------> O(n)
+
+struct *temp = head;
+while(temp)
+{
+	std::cout << tmp->data;
+	temp = temp->next;
+}
+
+Insertion to front O(1)
+
+struct node* newNode;
+newNode = new node;
+newNode->data = 4;
+newNode->next = head;
+head = newNode;
+
+
+Insertion at the End -------> O(n)
+
+struct node* newNode;
+newNode = new node;
+newNode->data = 4;
+newNode->next = NULL;
+
+struct *temp = head;
+while(temp)
+{
+	std::cout << tmp->data;
+	temp = temp->next;
+}
+
+temp->next = newNode;
+
+Insertion at the Middle -------> O(n)
+
+Allocate memory and store data for new node
+Traverse to node just before the required position of new node
+Change next pointers to include new node in between
+
+
+struct node* newNode;
+newNode = new node;
+newNode->data = 4;
+
+struct *temp = head;
+for(int i=2; i < position; i++) {
+  if(temp->next != NULL) {
+    temp = temp->next;
+  }
+}
+newNode->next = temp->next;
+temp->next = newNode;
+
+Deletion from front -------> O(1)
+
+	if (!head)
+		throw EmptyHead();
+	node *old = head;
+	head = old->next;
+	delete old;
+
+Deletion from End --------> O(n)
+
+struct node * temp = head;
+while(temp->next->next)
+{
+	temp = temp->next;
+}
+temp->next = NULL;
+
+Deletion from Middle --------> O(n)
+
+struct node * temp = head;
+for(int i = 2; i < position; i++)
+{
+	if(temp->next)
+		temp = temp->next;
+}
+temp->next = temp->next->next;
+
+Searching ---------------------> O(n)
+
+bool searchNode(struct Node** head_ref, int key) {
+  struct Node* current = *head_ref;
+
+  while (current != NULL) {
+    if (current->data == key) return true;
+      current = current->next;
+  }
+  return false;
+}
