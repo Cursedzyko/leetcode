@@ -1,0 +1,44 @@
+What is the advantage of using recursion? 
+
+Although the recursive implementation of the factorial function is somewhat simpler than the iterative version, in this
+case there is no compelling reason for preferring recursion over iteration. For some
+problems, however, a recursive implementation can be significantly simpler and
+easier to understand than an iterative implementation.
+
+
+
+
+Types of recursion:
+
+1. Linear Recursion
+2. Binare Recursion
+
+
+
+
+
+
+Linear Recursion ========================> O(n) memory O(n) 
+
+The simplest form of recursion is linear recursion, where a function is defined
+so that it makes at most one recursive call each time it is invoked. This type of
+recursion is useful when we view an algorithmic problem in terms of a first or last
+element plus a remaining set that has the same structure as the original set.
+
+0) Test for base cases. We begin by testing for a set of base cases (there should
+be at least one). These base cases should be defined so that every possible
+chain of recursive calls eventually reaches a base case, and the handling of
+each base case should not use recursion.
+
+1) Recur. After testing for base cases, we then perform a single recursive call.
+This recursive step may involve a test that decides which of several possible
+recursive calls to make, but it should ultimately choose to make just one of
+these calls each time we perform this step. Moreover, we should define each
+possible recursive call so that it makes progress towards a base case.
+
+
+
+
+Binary Recursion =====================================
+
+When an algorithm makes two recursive calls, we say that it uses binary recursion.

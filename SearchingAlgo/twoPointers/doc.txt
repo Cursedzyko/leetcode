@@ -1,0 +1,7 @@
+Two pointer technique used to search smth in array, string, 
+linked list and will take O(n) time if input is sorted, 
+if it is not we need to sort input than use this technique
+
+Variants of two pointers:
+Opposite direction- one pointer starts from beginning and second from end, they move towards each other.
+Equi  direction - both pointers start from beginning, one slow, second fast.

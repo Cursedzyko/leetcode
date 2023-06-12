@@ -1,0 +1,9 @@
+
+The circular linked list is a linked list where all nodes are connected to form a circle. 
+In a circular linked list, the first node and the last node are connected to each other which forms a circle. 
+There is no NULL at the end.
+
+The CURSOR node allows us to have a place to start from if we ever need to traverse a
+circularly linked list.
+
+cursor is the last element of the linked list, next is the beggining og the list.

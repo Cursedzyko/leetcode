@@ -1,0 +1,25 @@
+A stack is a container of objects that are inserted and removed according to the lastin first-out (LIFO) principle. 
+Objects can be inserted into a stack at any time, but
+only the most recently inserted (that is, “last”) object can be removed at any time
+
+
+
+Example: Internet Web browsers store the addresses of recently visited sites
+on a stack. Each time a user visits a new site, that site’s address is “pushed” onto the
+stack of addresses. The browser then allows the user to “pop” back to previously
+visited sites using the “back” button.
+
+Operations:
+
+push(e): Insert element e at the top of the stack.
+
+pop(): Remove the top element from the stack; an error occurs
+if the stack is empty.
+
+top(): Return a reference to the top element on the stack, without removing it;
+an error occurs if the stack is empty
+
+size(): Return the number of elements in the stack.
+
+empty(): Return true if the stack is empty and false otherwise.
+
